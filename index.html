@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Subhash Kumar Yadav — Final-year B.Tech Information Technology student focused on software development, full-stack applications and AI-powered solutions.">
+  <title>Subhash Kumar Yadav | Software Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Space Grotesk', 'sans-serif'] },
+          colors: {
+            ink: '#07111f',
+            panel: '#0d1b2a',
+            accent: '#7c3aed',
+            electric: '#22d3ee',
+            mint: '#34d399'
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp .8s ease-out forwards',
+            'float': 'float 5s ease-in-out infinite'
+          },
+          keyframes: {
+            fadeInUp: {'0%': {opacity:'0', transform:'translateY(24px)'}, '100%': {opacity:'1', transform:'translateY(0)'}},
+            float: {'0%,100%': {transform:'translateY(0)'}, '50%': {transform:'translateY(-8px)'}}
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar{width:8px} ::-webkit-scrollbar-track{background:#07111f} ::-webkit-scrollbar-thumb{background:#334155;border-radius:99px} ::-webkit-scrollbar-thumb:hover{background:#64748b}
+    body{background:#07111f}.glass-nav{background:rgba(7,17,31,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+    .reveal{opacity:0;transform:translateY(28px);transition:all .75s ease}.reveal.active{opacity:1;transform:translateY(0)}
+    .gradient-text{background:linear-gradient(100deg,#22d3ee 0%,#8b5cf6 55%,#f472b6 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .grid-bg{background-image:linear-gradient(rgba(148,163,184,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.055) 1px,transparent 1px);background-size:36px 36px}
+    .card{background:linear-gradient(145deg,rgba(15,30,48,.88),rgba(8,18,31,.72));border:1px solid rgba(148,163,184,.14)}
+    .glow{box-shadow:0 0 70px rgba(34,211,238,.08),0 0 100px rgba(124,58,237,.08)}
+    .about-photo-card{min-height:430px;height:100%;isolation:isolate}
+    .about-photo{min-height:430px;filter:saturate(.98) contrast(1.02)}
+    @media (max-width:767px){.about-photo-card,.about-photo{min-height:520px}}
+  </style>
+</head>
+<body class="text-slate-200 font-sans selection:bg-electric/20">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 glass-nav border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16">
+      <a href="#home" class="font-display text-xl md:text-2xl font-bold gradient-text">SUBHASH KUMAR YADAV</a>
+      <div class="hidden md:block"><div class="ml-10 flex items-baseline space-x-2">
+        <a href="#home" class="nav-link px-3 py-2 text-sm text-slate-300 hover:text-electric transition-colors">Home</a>
+        <a href="#about" class="nav-link px-3 py-2 text-sm text-slate-300 hover:text-electric transition-colors">About</a>
+        <a href="#skills" class="nav-link px-3 py-2 text-sm text-slate-300 hover:text-electric transition-colors">Skills</a>
+        <a href="#projects" class="nav-link px-3 py-2 text-sm text-slate-300 hover:text-electric transition-colors">Projects</a>
+        <a href="#resume" class="nav-link px-3 py-2 text-sm text-slate-300 hover:text-electric transition-colors">Resume</a>
+        <a href="#certifications" class="nav-link px-3 py-2 text-sm text-slate-300 hover:text-electric transition-colors">Certifications</a>
+        <a href="#contact" class="ml-2 bg-electric/10 text-electric border border-electric/30 px-4 py-2 rounded-full text-sm font-semibold hover:bg-electric/20 transition-all">Contact</a>
+      </div></div>
+      <button id="mobile-menu-btn" class="md:hidden text-slate-300 p-2"><i data-lucide="menu"></i></button>
+    </div></div>
+    <div id="mobile-menu" class="hidden md:hidden bg-ink/95 border-b border-white/10">
+      <div class="px-4 py-3 space-y-1">
+        <a href="#home" class="mobile-nav-link block px-3 py-2">Home</a><a href="#about" class="mobile-nav-link block px-3 py-2">About</a><a href="#skills" class="mobile-nav-link block px-3 py-2">Skills</a><a href="#projects" class="mobile-nav-link block px-3 py-2">Projects</a><a href="#resume" class="mobile-nav-link block px-3 py-2">Resume</a><a href="#certifications" class="mobile-nav-link block px-3 py-2">Certifications</a><a href="#contact" class="mobile-nav-link block px-3 py-2 text-electric">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden grid-bg">
+    <div class="absolute top-20 left-0 w-80 h-80 bg-electric/10 rounded-full blur-3xl"></div><div class="absolute bottom-0 right-0 w-96 h-96 bg-accent/15 rounded-full blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full"><div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal active">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-electric text-sm font-medium mb-6"><i data-lucide="code-2" class="w-4 h-4"></i><span>Final-Year B.Tech IT Student</span></div>
+        <h1 class="font-display text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">Hi, I'm<br><span class="gradient-text">Subhash Kumar Yadav</span></h1>
+        <p class="text-slate-400 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">Interested in software development, full-stack applications and AI-powered solutions. I build practical products that connect clean engineering with real-world problems.</p>
+        <div class="flex flex-wrap gap-4"><a href="#projects" class="px-8 py-3 bg-gradient-to-r from-electric to-accent text-white rounded-lg font-semibold shadow-lg shadow-electric/10 hover:-translate-y-1 transition-all">View Work</a><a href="#contact" class="px-8 py-3 bg-white/5 text-white border border-white/10 rounded-lg font-semibold hover:bg-white/10 hover:-translate-y-1 transition-all">Contact Me</a></div>
+        <div class="mt-10 flex items-center gap-6 text-slate-400"><a href="https://github.com/subhash446" target="_blank" rel="noopener" class="hover:text-white transition"><i class="fa-brands fa-github text-2xl"></i></a><a href="https://www.linkedin.com/in/subhash-kumar-yadav-062111266/" target="_blank" rel="noopener" class="hover:text-electric transition"><i class="fa-brands fa-linkedin text-2xl"></i></a><a href="mailto:subhashyadav25177@gmail.com" class="hover:text-electric transition"><i data-lucide="mail" class="w-6 h-6"></i></a></div>
+      </div>
+      <div class="reveal hidden md:flex justify-center"><div class="relative w-80 h-80 md:w-96 md:h-96 animate-float">
+        <div class="absolute inset-0 bg-gradient-to-r from-electric to-accent rounded-3xl rotate-6 opacity-20 blur-xl"></div>
+        <div class="absolute inset-0 card rounded-3xl border border-white/10 shadow-2xl overflow-hidden flex items-center justify-center glow">
+          <div class="p-7 font-mono text-sm text-slate-300 w-full"><div class="flex gap-2 mb-6"><div class="w-3 h-3 rounded-full bg-red-400"></div><div class="w-3 h-3 rounded-full bg-amber-400"></div><div class="w-3 h-3 rounded-full bg-emerald-400"></div></div>
+            <p><span class="text-fuchsia-400">const</span> <span class="text-amber-300">developer</span> = {</p><p class="pl-4">name: <span class="text-emerald-300">'Subhash'</span>,</p><p class="pl-4">role: <span class="text-emerald-300">'Software Developer'</span>,</p><p class="pl-4">focus: [<span class="text-emerald-300">'Web'</span>, <span class="text-emerald-300">'AI'</span>],</p><p class="pl-4">builds: <span class="text-cyan-300">'real-world products'</span></p><p>};</p><br><p><span class="text-fuchsia-400">return</span> developer.build();</p>
+          </div>
+        </div>
+      </div></div>
+    </div></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-white/[.025]"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal"><h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">About Me</h2><div class="h-1 w-24 bg-gradient-to-r from-electric to-accent mx-auto rounded-full"></div></div>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal"><div class="about-photo-card relative overflow-hidden rounded-2xl glow border border-white/10 bg-slate-950"><img src="profile-photo.jpg" alt="Subhash Kumar Yadav" class="about-photo w-full h-full object-cover object-center" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/15 to-transparent"></div><div class="absolute bottom-0 left-0 right-0 p-7 md:p-9"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/30 backdrop-blur-md border border-white/10 text-electric text-xs font-semibold mb-3"><i data-lucide="code-2" class="w-4 h-4"></i><span>Software Developer</span></div><p class="font-display text-2xl font-semibold text-white">Building software with a practical mindset.</p><p class="text-slate-300 mt-2 leading-relaxed text-sm md:text-base">Turning ideas into usable web applications and AI-assisted tools.</p></div></div></div>
+      <div class="reveal space-y-6"><h3 class="text-2xl font-bold text-white">Software Development • AI • Problem Solving</h3><p class="text-slate-400 leading-relaxed">My work spans frontend interfaces, backend APIs, SQL/NoSQL databases and integrations with LLM APIs. I have built and deployed real-world projects including the Bellecure business website, a market intelligence platform and an AI-powered WhatsApp assistant.</p><p class="text-slate-400 leading-relaxed">I also actively strengthen my foundation in Data Structures & Algorithms, OOP, DBMS, Operating Systems and Computer Networks.</p><div class="grid grid-cols-2 gap-4"><div class="p-4 card rounded-lg"><i data-lucide="graduation-cap" class="text-electric mb-2"></i><h4 class="font-bold text-white">Final Year</h4><p class="text-sm text-slate-500">B.Tech IT • 2023–2027</p></div><div class="p-4 card rounded-lg"><i data-lucide="brain" class="text-accent mb-2"></i><h4 class="font-bold text-white">AI Curious</h4><p class="text-sm text-slate-500">LLM & agentic workflows</p></div></div></div>
+    </div>
+  </div></section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24 relative"><div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal"><h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Technical Skills</h2><div class="h-1 w-24 bg-gradient-to-r from-electric to-accent mx-auto rounded-full"></div><p class="text-slate-400 mt-4">Tools and technologies I use to build, test and ship applications.</p></div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card rounded-xl p-6 reveal"><div class="flex items-center gap-3 mb-5"><i data-lucide="code" class="text-electric"></i><h3 class="text-white font-semibold">Languages</h3></div><div class="flex flex-wrap gap-2"><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">SQL</span></div></div>
+      <div class="card rounded-xl p-6 reveal"><div class="flex items-center gap-3 mb-5"><i data-lucide="layout" class="text-accent"></i><h3 class="text-white font-semibold">Frontend</h3></div><div class="flex flex-wrap gap-2"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Tailwind CSS</span><span class="tag">React.js</span></div></div>
+      <div class="card rounded-xl p-6 reveal"><div class="flex items-center gap-3 mb-5"><i data-lucide="server" class="text-mint"></i><h3 class="text-white font-semibold">Backend & APIs</h3></div><div class="flex flex-wrap gap-2"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">REST APIs</span><span class="tag">JWT</span><span class="tag">Webhooks</span></div></div>
+      <div class="card rounded-xl p-6 reveal"><div class="flex items-center gap-3 mb-5"><i data-lucide="database" class="text-amber-300"></i><h3 class="text-white font-semibold">Databases</h3></div><div class="flex flex-wrap gap-2"><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Mongoose</span></div></div>
+      <div class="card rounded-xl p-6 reveal"><div class="flex items-center gap-3 mb-5"><i data-lucide="sparkles" class="text-fuchsia-300"></i><h3 class="text-white font-semibold">AI & Integrations</h3></div><div class="flex flex-wrap gap-2"><span class="tag">Google Gemini API</span><span class="tag">LLM Integration</span><span class="tag">AI Agents</span><span class="tag">Prompt Engineering</span></div></div>
+      <div class="card rounded-xl p-6 reveal"><div class="flex items-center gap-3 mb-5"><i data-lucide="wrench" class="text-sky-300"></i><h3 class="text-white font-semibold">Tools & Core CS</h3></div><div class="flex flex-wrap gap-2"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Postman</span><span class="tag">VS Code</span><span class="tag">DSA</span><span class="tag">OOP</span><span class="tag">DBMS</span></div></div>
+    </div>
+  </div></section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 bg-white/[.025]"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal"><h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Featured Projects</h2><div class="h-1 w-24 bg-gradient-to-r from-electric to-accent mx-auto rounded-full"></div></div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="project-card reveal"><div class="flex justify-between items-start mb-5"><div class="icon-box"><i data-lucide="chart-no-axes-combined"></i></div><div class="flex items-center gap-4"><a href="https://business-market-monitor.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open Business Market Monitor live website" class="inline-flex items-center gap-2 text-sm font-semibold text-electric hover:text-white transition-colors"><span>Live Link</span><i data-lucide="external-link" class="w-4 h-4"></i></a><a href="https://github.com/subhash446/business-market-monitor" target="_blank" rel="noopener noreferrer" aria-label="Business Market Monitor GitHub repository" title="View GitHub repository" class="text-slate-500 hover:text-electric transition-colors"><i class="fa-brands fa-github text-xl"></i></a></div></div><h3 class="text-xl font-bold text-white mb-2">Business Market Monitor</h3><p class="text-slate-400 text-sm leading-relaxed mb-5">AI-Powered Market Intelligence & Alert Platform — full-stack market intelligence platform for monitoring raw-material prices, historical trends, market signals and business risk through a centralized dashboard, with automated price alerts and Gemini-powered insights.</p><div class="flex flex-wrap gap-2"><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">MySQL</span><span class="tag">Gemini</span></div></div>
+      <div class="project-card reveal"><div class="flex justify-between items-start mb-5"><div class="icon-box"><i data-lucide="droplets"></i></div><div class="flex items-center gap-3"><a href="https://bellecure.co.in/" target="_blank" rel="noopener noreferrer" aria-label="Open Bellecure live website" class="inline-flex items-center gap-2 text-sm font-semibold text-electric hover:text-white transition-colors"><span>Live Link</span><i data-lucide="external-link" class="w-4 h-4"></i></a><a href="https://github.com/subhash446/Bellecure-Website" target="_blank" rel="noopener noreferrer" aria-label="Bellecure GitHub repository" title="View GitHub repository" class="text-slate-500 hover:text-electric transition-colors"><i class="fa-brands fa-github text-xl"></i></a></div></div><h3 class="text-xl font-bold text-white mb-2">Bellecure Business Website</h3><p class="text-slate-400 text-sm leading-relaxed mb-5">Production business website for Bellecure Agro Food & Co., combining responsive frontend development, backend APIs, database integration and an AI-powered customer-support assistant.</p><div class="flex flex-wrap gap-2"><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">MongoDB</span><span class="tag">Tailwind</span></div></div>
+      <div class="project-card reveal"><div class="flex justify-between items-start mb-5"><div class="icon-box"><i data-lucide="message-circle"></i></div><a href="https://github.com/subhash446/Whatsapp-AI-FAQ-Chatbot" target="_blank" rel="noopener noreferrer" aria-label="AI WhatsApp Support Assistant GitHub repository" class="text-slate-500 hover:text-electric"><i class="fa-brands fa-github text-xl"></i></a></div><h3 class="text-xl font-bold text-white mb-2">AI-Powered WhatsApp Support Assistant</h3><p class="text-slate-400 text-sm leading-relaxed mb-5">WhatsApp-based AI assistant using Twilio webhooks, Node.js/Express, MongoDB and Google Gemini to process user queries and generate automated conversational responses.</p><div class="flex flex-wrap gap-2"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">MongoDB</span><span class="tag">Twilio</span><span class="tag">Gemini</span></div></div>
+    </div>
+  </div></section>
+
+  <!-- Resume -->
+  <section id="resume" class="py-24 relative overflow-hidden"><div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-14 reveal"><h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Resume</h2><div class="h-1 w-24 bg-gradient-to-r from-electric to-accent mx-auto rounded-full"></div></div>
+    <div class="card rounded-2xl p-8 md:p-10 glow reveal"><div class="grid md:grid-cols-[1.4fr_.6fr] gap-8 items-center"><div><div class="flex items-center gap-3 mb-4"><div class="w-11 h-11 rounded-xl bg-electric/10 flex items-center justify-center text-electric"><i data-lucide="file-text"></i></div><div><p class="text-white font-semibold">Subhash_Kumar_Yadav_Resume.pdf</p><p class="text-xs text-slate-500">Final-year B.Tech IT • Software Development</p></div></div><p class="text-slate-400 leading-relaxed">A concise overview of my education, technical skills, Bellecure experience, projects and AI/full-stack development work.</p></div><div class="flex md:justify-end"><a href="resume.pdf" download="Subhash_Kumar_Yadav_Resume.pdf" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-electric to-accent text-white font-bold rounded-xl hover:-translate-y-1 transition-all shadow-lg shadow-electric/10"><i data-lucide="download" class="w-5 h-5"></i>Download Resume</a></div></div></div>
+  </div></section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="py-24 bg-white/[.025]"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-16 reveal"><h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Certifications & Learning</h2><div class="h-1 w-24 bg-gradient-to-r from-electric to-accent mx-auto rounded-full"></div></div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="cert-card reveal"><i data-lucide="database" class="text-mint mb-4"></i><h3>CRUD Operations in MongoDB</h3><p>MongoDB</p><span>CRUD operations and working with MongoDB data.</span></div>
+      <div class="cert-card reveal"><i data-lucide="sparkles" class="text-accent mb-4"></i><h3>Introduction to Generative AI</h3><p>Google Cloud Skills Boost</p><span>Generative AI fundamentals, applications and core concepts.</span></div>
+      <div class="cert-card reveal"><i data-lucide="shield-check" class="text-electric mb-4"></i><h3>Introduction to Cybersecurity</h3><p>Cisco Networking Academy</p><span>Cybersecurity threats, network security and data protection fundamentals.</span></div>
+      <div class="cert-card reveal"><i data-lucide="lightbulb" class="text-electric mb-4"></i><h3>Design Thinking for Innovation</h3><p>University of Virginia</p><span>Design thinking, innovation, ideation and problem-solving methodologies.</span></div>
+    </div>
+  </div></section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24"><div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-14 reveal"><h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4">Get In Touch</h2><div class="h-1 w-24 bg-gradient-to-r from-electric to-accent mx-auto rounded-full"></div><p class="text-slate-400 mt-4">Have an opportunity, project idea or collaboration in mind?</p></div>
+    <div class="card p-8 rounded-2xl shadow-xl reveal"><form id="contactForm" action="https://formsubmit.co/ajax/subhashyadav25177@gmail.com" method="POST" class="space-y-6"><div class="grid md:grid-cols-2 gap-6"><div><label for="from_name" class="label">Name</label><input id="from_name" name="name" autocomplete="name" class="input" placeholder="Your Name" required></div><div><label for="from_email" class="label">Email</label><input id="from_email" name="email" type="email" autocomplete="email" class="input" placeholder="you@example.com" required></div></div><div><label for="from_message" class="label">Message</label><textarea id="from_message" name="message" rows="5" class="input" placeholder="Tell me about your opportunity or project..." required></textarea></div><input type="hidden" name="_subject" value="New Portfolio Contact Message"><input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden"><button id="contactSubmitButton" type="submit" class="w-full bg-gradient-to-r from-electric to-accent text-white font-bold py-4 rounded-lg hover:-translate-y-1 transition-all">Send Message</button><p id="statusMessage" role="status" aria-live="polite" class="hidden text-sm text-center text-electric"></p></form></div>
+    <div class="text-center mt-8 text-slate-500 text-sm">Or reach me directly at <a class="text-electric hover:underline" href="mailto:subhashyadav25177@gmail.com">subhashyadav25177@gmail.com</a></div>
+  </div></section>
+
+  <footer class="border-t border-white/10 py-8"><div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-4 items-center"><p class="text-slate-500 text-sm">© <span id="year"></span> Subhash Kumar Yadav. All rights reserved.</p><div class="flex gap-5 text-slate-500"><a href="https://github.com/subhash446" target="_blank" class="hover:text-white"><i class="fa-brands fa-github text-lg"></i></a><a href="https://www.linkedin.com/in/subhash-kumar-yadav-062111266/" target="_blank" class="hover:text-electric"><i class="fa-brands fa-linkedin text-lg"></i></a></div></div></footer>
+
+  <script>
+    document.querySelectorAll('.tag').forEach(el=>el.classList.add('px-2.5','py-1','text-xs','rounded-md','bg-white/5','text-slate-300','border','border-white/10'));
+    document.querySelectorAll('.project-card').forEach(el=>el.classList.add('card','rounded-xl','p-6','hover:border-electric/30','hover:-translate-y-2','transition-all','duration-300','group'));
+    document.querySelectorAll('.icon-box').forEach(el=>el.classList.add('p-3','bg-electric/10','rounded-lg','text-electric','w-fit'));
+    document.querySelectorAll('.cert-card').forEach(el=>el.classList.add('card','rounded-xl','p-6','hover:border-electric/30','transition-all'));
+    document.querySelectorAll('.cert-card h3').forEach(el=>el.classList.add('text-lg','font-bold','text-white','mb-1'));
+    document.querySelectorAll('.cert-card p').forEach(el=>el.classList.add('text-sm','text-slate-400','mb-3'));
+    document.querySelectorAll('.cert-card span').forEach(el=>el.classList.add('text-xs','text-slate-500'));
+    document.querySelectorAll('.label').forEach(el=>el.classList.add('block','text-sm','font-medium','text-slate-300','mb-2'));
+    document.querySelectorAll('.input').forEach(el=>el.classList.add('w-full','bg-ink','border','border-white/10','rounded-lg','px-4','py-3','text-white','placeholder-slate-600','focus:outline-none','focus:border-electric','transition-colors'));
+    lucide.createIcons();
+    const menuBtn=document.getElementById('mobile-menu-btn'), menu=document.getElementById('mobile-menu'); menuBtn?.addEventListener('click',()=>menu.classList.toggle('hidden')); document.querySelectorAll('.mobile-nav-link').forEach(a=>a.addEventListener('click',()=>menu.classList.add('hidden')));
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('active')}),{threshold:.12}); document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const contactForm = document.getElementById('contactForm');
+    const contactSubmitButton = document.getElementById('contactSubmitButton');
+    const statusMessage = document.getElementById('statusMessage');
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!contactForm.reportValidity()) return;
+
+      const formData = new FormData(contactForm);
+      const payload = {
+        name: String(formData.get('name') || '').trim(),
+        email: String(formData.get('email') || '').trim(),
+        message: String(formData.get('message') || '').trim(),
+        _subject: 'New Portfolio Contact Message',
+        _honey: String(formData.get('_honey') || '').trim()
+      };
+
+      contactSubmitButton.disabled = true;
+      contactSubmitButton.textContent = 'Sending…';
+      contactSubmitButton.classList.add('opacity-70', 'cursor-not-allowed');
+      statusMessage.textContent = 'Sending your message…';
+      statusMessage.classList.remove('hidden', 'text-red-400');
+      statusMessage.classList.add('text-electric');
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || result.success === false || result.success === 'false') {
+          throw new Error(result.message || 'The contact service could not accept your message.');
+        }
+        statusMessage.textContent = 'Message submitted successfully. Thanks for reaching out!';
+        contactForm.reset();
+      } catch (error) {
+        statusMessage.textContent = 'Unable to send right now. Please email subhashyadav25177@gmail.com directly.';
+        statusMessage.classList.remove('text-electric');
+        statusMessage.classList.add('text-red-400');
+        console.error('Portfolio contact form submission failed:', error);
+      } finally {
+        contactSubmitButton.disabled = false;
+        contactSubmitButton.textContent = 'Send Message';
+        contactSubmitButton.classList.remove('opacity-70', 'cursor-not-allowed');
+      }
+    });
+  </script>
+</body>
+</html>
